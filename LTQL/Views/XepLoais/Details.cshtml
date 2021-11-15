@@ -1,0 +1,51 @@
+﻿@model LTQL.Models.XepLoai
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>XepLoai</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DoanVien.Ma_dv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DoanVien.Ma_dv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Năm_hoc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Năm_hoc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nhan_xet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nhan_xet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Xep_loai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Xep_loai)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

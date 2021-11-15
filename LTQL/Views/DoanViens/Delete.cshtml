@@ -1,0 +1,81 @@
+﻿@model LTQL.Models.DoanVien
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>DoanVien</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ChiDoan.Ma_cd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChiDoan.Ma_cd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ma_dv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ma_dv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ten_dv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ten_dv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ngay_sinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ngay_sinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Que_quan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Que_quan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dan_toc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dan_toc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ngay_vao_doan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ngay_vao_doan)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

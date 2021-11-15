@@ -1,0 +1,75 @@
+﻿@model LTQL.Models.DoanVien
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DoanVien</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ChiDoan.Ma_cd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChiDoan.Ma_cd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ma_dv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ma_dv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ten_dv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ten_dv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ngay_sinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ngay_sinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Que_quan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Que_quan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dan_toc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dan_toc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ngay_vao_doan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ngay_vao_doan)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
