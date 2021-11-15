@@ -141,6 +141,7 @@
     <Compile Include="Models\ChiDoan.cs" />
     <Compile Include="Models\DoanVien.cs" />
     <Compile Include="Models\HoatDong.cs" />
+    <Compile Include="Models\Process\StringProcess.cs" />
     <Compile Include="Models\QLDVDbContext.cs" />
     <Compile Include="Models\XepLoai.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
