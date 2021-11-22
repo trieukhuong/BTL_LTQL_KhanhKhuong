@@ -126,6 +126,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ChiDoansController.cs" />
     <Compile Include="Controllers\DoanViensController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -137,11 +138,16 @@
     <Compile Include="Migrations\202111151953330_Create_Table.designer.cs">
       <DependentUpon>202111151953330_Create_Table.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202111221830560_Create_Table_Accounts.cs" />
+    <Compile Include="Migrations\202111221830560_Create_Table_Accounts.Designer.cs">
+      <DependentUpon>202111221830560_Create_Table_Accounts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Account.cs" />
     <Compile Include="Models\ChiDoan.cs" />
     <Compile Include="Models\DoanVien.cs" />
+    <Compile Include="Models\Encrytion.cs" />
     <Compile Include="Models\HoatDong.cs" />
-    <Compile Include="Models\Process\StringProcess.cs" />
     <Compile Include="Models\QLDVDbContext.cs" />
     <Compile Include="Models\XepLoai.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -200,6 +206,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Account\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -217,6 +224,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202111151953330_Create_Table.resx">
       <DependentUpon>202111151953330_Create_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111221830560_Create_Table_Accounts.resx">
+      <DependentUpon>202111221830560_Create_Table_Accounts.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -11,10 +11,11 @@ namespace LTQL.Models
         public QLDVDbContext() : base("name=QLDVDbContext")
         {
         }
-        public DbSet<ChiDoan> ChiDoans { get; set; }
-        public DbSet<DoanVien> DoanViens { get; set; }
-        public DbSet<HoatDong> HoatDongs { get; set; }
-        public DbSet<XepLoai> XepLoais { get; set; }
+        public virtual DbSet<ChiDoan> ChiDoans { get; set; }
+        public virtual DbSet<DoanVien> DoanViens { get; set; }
+        public virtual DbSet<HoatDong> HoatDongs { get; set; }
+        public virtual DbSet<XepLoai> XepLoais { get; set; }
+        public virtual DbSet<Account> Accounts { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
